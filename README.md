@@ -49,13 +49,15 @@ cd Nexus-Chapter-Website
  It will open at https:/localhost/3000
  ## Project Structure
 ```
- ├── app/                # App Router, entry point for Next.js routes
-│   ├── layout.tsx      # Layout component for all pages
-│   ├── page.tsx        # Home page component
-│   ├── events/         # Events section with nested routes
-│   └── about/          # About section with static content
-├── components/         # Reusable components (Header, Footer, etc.)
+|src/
+    ├── app/                # App Router, entry point for Next.js routes
+       ├── layout.tsx      # Layout component for all pages
+       ├── page.tsx        # Home page component
+       ├── events/         # Events section with nested routes
+       └── about/          # About section with static content
+    ├── components/         # Reusable components (Header, Footer, etc.)
 ├── public/             # Static files like images and icons
+    ├── images/
 ├── styles/             # Global styles and Tailwind configuration
 ├── tsconfig.json       # TypeScript configuration
 └── tailwind.config.js  # Tailwind CSS configuration
