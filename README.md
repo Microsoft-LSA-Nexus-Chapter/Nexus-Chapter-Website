@@ -3,7 +3,7 @@
 Welcome to the **MLSA Nexus Chapter Website** repository! 🎉  
 This project is built using **Next.js** with **TypeScript** for type safety and **Tailwind CSS** for styling. It’s designed to be a dynamic, community-driven platform where Microsoft Learn Student Ambassadors (MLSA) can share resources, announce events, and foster collaboration.
 
-# Figma Link for referal to the design
+# Figma Link for reference
 
 https://www.figma.com/design/9EePKTLQQBEbIW1FtQKXJJ/Nexus-Website
 
