@@ -1,34 +1,15 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
+// app/layout.tsx
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import React from 'react';
+import './globals.css'; // Ensure to import your global CSS
+import Navbar from '../components/navbar'; // Adjust the path as needed
 
-export const metadata: Metadata = {
-  title: "MLSA Nexus Chapter",
-  description: "Vibrant community of learners, creators, and innovators",
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className="bg-black text-white">
+        <Navbar />
+        {children} {/* This renders the page content */}
       </body>
     </html>
   );
