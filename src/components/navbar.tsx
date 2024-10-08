@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../../public/images/mlsalogo.png'; // Assuming this is the logo you're using
+import logo from '../../public/images/mlsalogo.png'; 
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ export default function Navbar() {
     return (
         <header className="bg-white p-4 shadow-md w-full fixed top-0 z-50">
             <nav className="container mx-auto flex justify-between items-center">
-                {/* Logo and Title */}
+             
                 <div className="flex items-center space-x-4">
                     <Image src={logo} alt="MLSA Logo" width={50} height={50} />
                     <div>

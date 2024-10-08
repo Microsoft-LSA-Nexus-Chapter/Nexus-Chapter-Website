@@ -10,10 +10,10 @@ const Members = () => {
           in their communities. Below are some of our dedicated members:
         </p>
         <ul className="mt-5 list-disc list-inside">
-        <li className="text-lg">Debaditya - Lead</li>
-          <li className="text-lg">Shinjan Saha - Cypher Co-Associate</li>
-          <li className="text-lg">Komal - Cypher Member</li>
-           <li className="text-lg">Aditya - Associate</li>
+        <li className="text-lg">Debaditya Som - Lead</li>
+          <li className="text-lg">Shinjan Saha - Cypher Co-Associate</li> {/* Include members Linkdln & github profile when creating the card */}
+          <li className="text-lg">Komal Agarwal - Cypher Member</li>
+           <li className="text-lg">Aditya Seth - Cypher Associate</li>
         </ul>
       </div>
     </div>

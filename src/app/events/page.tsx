@@ -4,7 +4,7 @@ const Events = () => {
   return (
     <div className="bg-white text-black min-h-screen flex flex-col items-center justify-center">
       <div className="container mx-auto my-10 p-10">
-        <h1 className="text-3xl font-bold text-center mb-5">Upcoming Events(Dummy Content)</h1>
+        <h1 className="text-3xl font-bold text-center mb-5">Upcoming Events(Dummy Content)</h1> {/* In future to use RESTAPI for Event Data fetch */}
         <p className="text-lg text-center text-gray-700 mb-10">
           Stay tuned for the latest events, workshops, and activities hosted by the Nexus Chapter.
         </p>
@@ -33,8 +33,9 @@ const Events = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div>   
   );
 };
 
 export default Events;
+ 
