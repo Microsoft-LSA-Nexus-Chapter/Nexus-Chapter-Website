@@ -20,6 +20,7 @@ export default function Navbar() {
           <div className="space-x-6">
             <Link href="/" className="text-black hover:text-gray-600">Home</Link>
             <Link href="/about" className="text-black hover:text-gray-600">About Us</Link>
+            <Link href="/events" className="text-black hover:text-gray-600">Events</Link>
             <Link href="/members" className="text-black hover:text-gray-600">Members</Link>
             <Link href="/gallery" className="text-black hover:text-gray-600">Gallery</Link>
             <Link href="/contact" className="text-black hover:text-gray-600">Contact Us</Link>

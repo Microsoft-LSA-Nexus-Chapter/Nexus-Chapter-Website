@@ -57,8 +57,11 @@ cd Nexus-Chapter-Website
     ├── app/                # App Router, entry point for Next.js routes
        ├── layout.tsx      # Layout component for all pages
        ├── page.tsx        # Home page component
-       ├── events/         # Events section with nested routes
-       └── about/          # About section with static content
+       ├── events/page.tsx  # Events section with nestedroutes
+       |___ gallery/page.tsx  # Gallery of all the events
+       |___ members/page.tsx  # Members of the MLSA Nexus chapter
+       └── about/page.tsx         # About section with static content
+       |___ Contact/page.tsx  # Contact Page
     ├── components/         # Reusable components (Header, Footer, etc.)
 ├── public/             # Static files like images and icons
     ├── images/
