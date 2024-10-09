@@ -22,6 +22,14 @@ https://www.figma.com/design/9EePKTLQQBEbIW1FtQKXJJ/Nexus-Website
 
 We are thrilled to announce that **MLSA Nexus Chapter Website** is part of **Hacktoberfest 2024**! Hacktoberfest is a month-long celebration of open-source software, and we welcome all contributors, from beginners to seasoned developers, to join us and help make this repository even better.
 
+## Rules for Contriution:-
+<ul>
+<li> Always raise an issue or take existing issue and them ask maintainers to get yourself assigned to your choosen issue ,NO PR will be accpeted if it's not from an issue assigned to you. </li>
+<li>No Spammy PR, your PR will be tagged as spammy & you can  get banned from Hacktoberfest as accoriding to hacktoberfest guidelines for which maintainer will be not held responsibile. </li>
+<li>NO PR on Readme File will be entertained & will be marked as spammy </li>
+
+</ul>
+
 ## 🛠️ Installation and Setup
 
 ### Prerequisites
