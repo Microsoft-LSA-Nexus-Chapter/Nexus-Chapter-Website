@@ -130,8 +130,8 @@ const Footer = () => {
   ];
   return (
     <footer className=" bg-white text-black py-6 border-t-[#4F4F4F] border-2 border-opacity-20">
-      <div className="footer-content flex justify-evenly flex-wrap gap-10">
-        <div className="icon-container md:w-1/5 w-1/3 md:mx-18 mx-2">
+      <div className="footer-content flex justify-evenly md:flex-nowrap flex-wrap gap-10">
+        <div className="icon-container lg:w-1/5 w-1/3 lg:mx-18 mx-2">
           <Image
             className=" mb-10 aspect-square"
             src={logo}
@@ -139,71 +139,71 @@ const Footer = () => {
             width={50}
             height={50}
           />
-          <div className="social-icons w-fit flex md:gap-8 gap-5">
+          <div className="social-icons w-fit flex lg:gap-8 gap-5">
             <a href="#">
               <FontAwesomeIcon
-                className="md:w-8 md:h-8 w-5 h-5 aspect-square cursor-pointer"
+                className="lg:w-8 lg:h-8 w-5 h-5 aspect-square cursor-pointer"
                 icon={faXTwitter}
               />
             </a>
             <a href="#">
               <FontAwesomeIcon
-                className="md:w-8 md:h-8 w-5 h-5 aspect-square cursor-pointer"
+                className="lg:w-8 lg:h-8 w-5 h-5 aspect-square cursor-pointer"
                 icon={faInstagram}
               />
             </a>
             <a href="#">
               <FontAwesomeIcon
-                className="md:w-8 md:h-8 w-5 h-5 aspect-square cursor-pointer"
+                className="lg:w-8 lg:h-8 w-5 h-5 aspect-square cursor-pointer"
                 icon={faYoutube}
               />
             </a>
             <a href="#">
               <FontAwesomeIcon
-                className="md:w-8 md:h-8 w-5 h-5 aspect-square cursor-pointer"
+                className="lg:w-8 lg:h-8 w-5 h-5 aspect-square cursor-pointer"
                 icon={faLinkedin}
               />
             </a>
           </div>
         </div>
-        <div className="use-cases h-fit md:w-1/5 ">
+        <div className="use-cases h-fit lg:w-1/5 ">
           <p className="use-cases-heading font-bold capitalize font-sans mb-10">
             use cases
           </p>
           {usecases.map((e) => (
-            <p className="use-cases-content md:mb-4 mb-2">
-              <a className="md:text-sm text-xs" href={e.link}>
+            <p className="use-cases-content lg:mb-4 mb-2">
+              <a className="lg:text-sm text-xs" href={e.link}>
                 {e.content}
               </a>
             </p>
           ))}
         </div>
-        <div className="explore h-fit md:w-1/5 w-1/4">
+        <div className="explore md:ml-10 lg:ml-0 h-fit lg:w-1/5 w-1/4">
           <p className="explore-heading font-bold capitalize font-sans mb-10">
             explore
           </p>
           {explore.map((e) => (
-            <p className="use-cases-content md:mb-4 mb-2">
-              <a className="md:text-sm text-xs" href={e.link}>
+            <p className="use-cases-content lg:mb-4 mb-2">
+              <a className="lg:text-sm text-xs" href={e.link}>
                 {e.content}
               </a>
             </p>
           ))}
         </div>
-        <div className="resources h-fit md:w-1/5 w-1/4">
+        <div className="resources h-fit lg:w-1/5 w-1/4">
           <p className="resources-heading font-bold capitalize font-sans mb-10">
             resources
           </p>
           {resources.map((e) => (
-            <p className="use-cases-content md:mb-4 mb-2">
-              <a className="md:text-sm text-xs" href={e.link}>
+            <p className="use-cases-content lg:mb-4 mb-2">
+              <a className="lg:text-sm text-xs" href={e.link}>
                 {e.content}
               </a>
             </p>
           ))}
         </div>
       </div>
-      <p className="md:text-sm text-xs text-center mt-5 text-[8px]">
+      <p className="lg:text-sm text-xs text-center mt-5 text-[8px]">
         &copy; {new Date().getFullYear()} Microsoft Learn Student Ambassador -
         Nexus Chapter. All rights reserved.
       </p>
