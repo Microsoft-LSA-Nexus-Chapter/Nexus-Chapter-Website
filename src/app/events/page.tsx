@@ -1,5 +1,37 @@
 import React from 'react';
-
+import EventCard from '@/src/components/events/EventCard';
+const fakeEvents = [
+  {
+    title: "ReactJs Conf' 2024",
+    description: "Welcome to ReactJS Summit. You are invited to this event. Please register.",
+    badges: ["React.js", "Meta", "React19", "React Compiler"],
+    timeAgo: "2 hours ago",
+  },
+  {
+    title: "Next.js World 2024",
+    description: "The official Next.js conference. Join us for great talks and networking.",
+    badges: ["Next.js", "Vercel", "SSG", "SSR"],
+    timeAgo: "5 hours ago",
+  },
+  {
+    title: "JS Fest 2024",
+    description: "JavaScript festival featuring top speakers from around the world.",
+    badges: ["JavaScript", "Node.js", "Deno", "ES6"],
+    timeAgo: "1 day ago",
+  },
+  {
+    title: "Vue.js Summit 2024",
+    description: "Join us for the Vue.js summit. Learn the latest in the Vue.js ecosystem.",
+    badges: ["Vue.js", "Vue Router", "Nuxt.js", "Pinia"],
+    timeAgo: "3 days ago",
+  },
+  {
+    title: "Angular Connect 2024",
+    description: "A conference for Angular developers. Join the Angular community.",
+    badges: ["Angular", "RxJS", "NgRx", "Ivy"],
+    timeAgo: "5 days ago",
+  },
+];
 const Events = () => {
   return (
     <div className="bg-white text-black min-h-screen flex flex-col items-center justify-center">
@@ -8,30 +40,17 @@ const Events = () => {
         <p className="text-lg text-center text-gray-700 mb-10">
           Stay tuned for the latest events, workshops, and activities hosted by the Nexus Chapter.
         </p>
-        
-        {/* Dummy events list */}
-        <div className="space-y-8">
-          <div className="bg-gray-100 p-5 rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold">Tech Talk: The Future of AI</h2>
-            <p className="text-gray-700">Date: October 20, 2024</p>
-            <p className="text-gray-700">Location: Nexus Auditorium</p>
-            <p className="text-gray-700">Join us for an insightful session on the advancements and future of AI.</p>
-          </div>
-          
-          <div className="bg-gray-100 p-5 rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold">Hackathon 2024</h2>
-            <p className="text-gray-700">Date: November 5-7, 2024</p>
-            <p className="text-gray-700">Location: Online</p>
-            <p className="text-gray-700">Participate in our 48-hour coding challenge and showcase your skills!</p>
-          </div>
-
-          <div className="bg-gray-100 p-5 rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold">Web Development Bootcamp</h2>
-            <p className="text-gray-700">Date: December 1, 2024</p>
-            <p className="text-gray-700">Location: Nexus Lab</p>
-            <p className="text-gray-700">Learn the latest trends and technologies in web development with hands-on projects.</p>
-          </div>
-        </div>
+        <div className="space-y-6">
+      {fakeEvents.map((event, index) => (
+        <EventCard
+          key={index}
+          title={event.title}
+          description={event.description}
+          badges={event.badges}
+          timeAgo={event.timeAgo}
+        />
+      ))}
+    </div>
       </div>
     </div>   
   );

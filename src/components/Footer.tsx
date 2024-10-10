@@ -171,7 +171,7 @@ const Footer = () => {
             use cases
           </p>
           {usecases.map((e) => (
-            <p className="use-cases-content lg:mb-4 mb-2">
+            <p key={e.link} className="use-cases-content lg:mb-4 mb-2">
               <a className="lg:text-sm text-xs" href={e.link}>
                 {e.content}
               </a>
@@ -183,7 +183,7 @@ const Footer = () => {
             explore
           </p>
           {explore.map((e) => (
-            <p className="explore-content lg:mb-4 mb-2">
+            <p key={e.id} className="explore-content lg:mb-4 mb-2">
               <a className="lg:text-sm text-xs" href={e.link}>
                 {e.content}
               </a>
@@ -195,7 +195,7 @@ const Footer = () => {
             resources
           </p>
           {resources.map((e) => (
-            <p className="resources-content lg:mb-4 mb-2">
+            <p key={e.id} className="resources-content lg:mb-4 mb-2">
               <a className="lg:text-sm text-xs" href={e.link}>
                 {e.content}
               </a>
