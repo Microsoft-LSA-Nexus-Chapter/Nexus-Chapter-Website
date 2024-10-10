@@ -8,7 +8,7 @@ import {
 import React from "react";
 import Image from "next/image";
 
-// Assuming multiple image imports
+
 import Debaditya from "../../../public/images/DebadityaSom.jpg";
 import AdityaSeth from "../../../public/images/AdityaSeth.jpg";
 import AnikMukherjee from "../../../public/images/AnikMukherjee.jpg";
