@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .role-column {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+  
+  .member-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 50px; 
+  }
+  
+  .member-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px; 
+    text-align: center;
+    margin-right: 5px;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 auto; 
+    margin-bottom: 1rem;
+  }
+  
+  .member-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .member-role {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-icon {
+    font-size: 0.9rem;
+    color: #0077b5; 
+  }
+  
+  
+  .role-title {
+    font-size: 1.7rem; 
+    font-weight: bold;  
+    margin-bottom: 20px; 
+    color: #1f2937;
+  }
+  
