@@ -146,19 +146,19 @@ const Footer = () => {
                 icon={faXTwitter}
               />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/mlsa_nexus_chapter?igsh=MTR2ZHFhano5ZWUzbQ==">
               <FontAwesomeIcon
                 className="lg:w-8 lg:h-8 w-5 h-5 aspect-square cursor-pointer"
                 icon={faInstagram}
               />
             </a>
-            <a href="#">
+            <a href="https://www.youtube.com/@MLSA-Nexus">
               <FontAwesomeIcon
                 className="lg:w-8 lg:h-8 w-5 h-5 aspect-square cursor-pointer"
                 icon={faYoutube}
               />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/company/mlsa-nexus/">
               <FontAwesomeIcon
                 className="lg:w-8 lg:h-8 w-5 h-5 aspect-square cursor-pointer"
                 icon={faLinkedin}
@@ -214,7 +214,7 @@ const Footer = () => {
         <a href="#" className="hover:underline">
           Terms of Service
         </a>
-        <a href="#" className="hover:underline">
+        <a href="/contact" className="hover:underline">
           Contact Us
         </a>
       </div>
