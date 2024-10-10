@@ -33,7 +33,7 @@ const FAQ = () => {
         Frequently Asked Questions (FAQs)
       </h1>
       {data.map((e) => (
-        <>
+        <div key={e.id}>
           <div className="sub-container-question md:mt-20 mt-14 h-fit w-full bg-transparent md:text-lg ">
             <div className="lg:pl-10 pl-5 lg:h-32 h-24 w-full flex ">
               <div
@@ -61,7 +61,7 @@ const FAQ = () => {
               </div>
             </div>
           </div>
-        </>
+        </div>
       ))}
     </div>
   );
