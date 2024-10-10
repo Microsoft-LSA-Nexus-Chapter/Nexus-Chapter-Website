@@ -33,13 +33,14 @@ const members: Member[] = [
 ];
 
 
-const groupedMembers = members.reduce<Record<string, Member[]>>((acc, member) => {
+const groupedMembers =members.reduce<Record<string, Member[]>>((acc, member) => {
   if (!acc[member.role]) {
     acc[member.role] = [];
   }
   acc[member.role].push(member);
   return acc;
 }, {});
+
 
 const Members: React.FC = () => {
   return (
