@@ -22,7 +22,7 @@ import TanushreeDas from "../../../public/images/TanushreeDas.jpg";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
-// Data for different member categories
+
 const teams = {
   coreTeam: {
     title: "🔱 The Olympians (Core and management team)",
