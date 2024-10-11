@@ -48,31 +48,50 @@ const Members: React.FC = () => {
         <div className="grid">
           {Object.keys(groupedMembers).map((role) => (
             <div key={role} className="mb-10 w-full">
-              <h2 className="text-2xl font-bold text-gray-800 mb-5 text-center">{role}</h2>
+              <h2 className="text-2xl font-bold text-black text-center" style={{ marginBottom: '20px' }}>{role}</h2>
               <div className="flex flex-wrap justify-center gap-12">
                 {groupedMembers[role].map((member, index) => (
                   <div
                     key={index}
-                    className="bg-teal-50 p-6 rounded-lg shadow-lg w-52 text-center hover:bg-teal-100 transition-colors"
+                    className="relative p-6 rounded-lg shadow-lg w-52 text-center hover:bg-teal-100 transition-colors"
+                    style={{
+                      backgroundColor: '#57B8FF',
+                      color: '#F5F5F5' 
+                    }}
                   >
-                    <div className="w-20 h-20 rounded-full bg-gray-300 mx-auto mb-4"></div>
-                    <div className="text-xl font-semibold mb-2 text-gray-800">{member.name}</div>
-                    <div className="text-gray-600 mb-4">{member.role}</div>
-                    <div className="flex justify-center gap-6">
-                      <a href="#" className="text-blue-600">
-                        <img
-                          src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"
-                          alt="LinkedIn"
-                          className="w-6 h-6"
-                        />
-                      </a>
-                      <a href="#" className="text-gray-800">
-                        <img
-                          src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
-                          alt="GitHub"
-                          className="w-6 h-6"
-                        />
-                      </a>
+                   
+                    <div
+                      className="w-20 h-20 rounded-full bg-gray-300 mx-auto mb-4"
+                      style={{
+                        border: '4px solid #A4F6D1', 
+                      }}
+                    ></div>
+                    <div className="text-xl font-semibold mb-2 text-white">{member.name}</div>
+                    <div className="text-white mb-4">{member.role}</div>
+
+                    
+                    <div
+                      className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 p-4 rounded-lg shadow-lg"
+                      style={{
+                        backgroundColor: '#A4F6D1', 
+                      }}
+                    >
+                      <div className="flex justify-center gap-6">
+                        <a href="#" className="text-blue-600">
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"
+                            alt="LinkedIn"
+                            className="w-6 h-6"
+                          />
+                        </a>
+                        <a href="#" className="text-gray-800">
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                            alt="GitHub"
+                            className="w-6 h-6"
+                          />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 ))}
