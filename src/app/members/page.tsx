@@ -53,48 +53,55 @@ const Members: React.FC = () => {
                 {groupedMembers[role].map((member, index) => (
                   <div
                     key={index}
-                    className="relative p-6 rounded-lg w-52 text-center transition-colors"
+                    className="relative p-6 rounded-lg w-52 text-center transition-colors transform hover:scale-105 overflow-visible"
                     style={{
-                      backgroundColor: 'rgba(0, 115, 169, 0.3)',
-                      backdropFilter: 'blur(10px)', 
-                      boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)', 
-                      border: '1px solid rgba(255, 255, 255, 0.3)', 
-                      color: '#0B2545' 
+                      background: 'linear-gradient(145deg, rgba(0, 115, 169, 0.1), rgba(0, 115, 169, 0.3))',
+                      backdropFilter: 'blur(15px)',
+                      boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)',
+                      border: '1px solid rgba(255, 255, 255, 0.3)',
+                      color: '#0B2545',
+                      transition: 'all 0.3s ease-in-out',
+                      minHeight: '240px', 
+                      overflow: 'visible',
+                      paddingBottom: '3rem' 
                     }}
                   >
-                   
                     <div
                       className="w-20 h-20 rounded-full bg-gray-300 mx-auto mb-4"
                       style={{
-                        border: '4px solid #007D7D', 
+                        border: '4px solid #007D7D',
                       }}
                     ></div>
                     <div className="text-xl font-semibold mb-2">{member.name}</div>
-                    <div className="mb-4">{member.role}</div>
+                    <div className="mb-8">{member.role}</div> 
 
-                    
+                   
                     <div
-                      className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 p-4 rounded-lg shadow-lg"
+                      className="absolute top-0 left-0 w-full h-full rounded-lg pointer-events-none"
                       style={{
-                        backgroundColor: 'rgba(164, 246, 209, 0.8)',
+                        background: 'linear-gradient(120deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%)',
+                        opacity: 0.6,
+                        transform: 'rotate(25deg) translateX(-100%)',
+                        transition: 'transform 0.7s ease-in-out',
                       }}
-                    >
-                      <div className="flex justify-center gap-6">
-                        <a href="#" className="text-blue-600">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"
-                            alt="LinkedIn"
-                            className="w-6 h-6"
-                          />
-                        </a>
-                        <a href="#" className="text-gray-800">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
-                            alt="GitHub"
-                            className="w-6 h-6"
-                          />
-                        </a>
-                      </div>
+                    ></div>
+
+                   
+                    <div className="flex justify-center gap-6">
+                      <a href="#" className="flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full p-1 hover:bg-gray-300 transition">
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"
+                          alt="LinkedIn"
+                          className="w-6 h-6"
+                        />
+                      </a>
+                      <a href="#" className="flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full p-1 hover:bg-gray-300 transition">
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                          alt="GitHub"
+                          className="w-6 h-6"
+                        />
+                      </a>
                     </div>
                   </div>
                 ))}
