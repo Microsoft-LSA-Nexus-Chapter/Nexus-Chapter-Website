@@ -48,32 +48,35 @@ const Members: React.FC = () => {
         <div className="grid">
           {Object.keys(groupedMembers).map((role) => (
             <div key={role} className="mb-10 w-full">
-              <h2 className="text-2xl font-bold text-black text-center" style={{ marginBottom: '20px' }}>{role}</h2>
+              <h2 className="text-2xl font-bold text-center" style={{ color: '#0B2545', marginBottom: '20px' }}>{role}</h2>
               <div className="flex flex-wrap justify-center gap-12">
                 {groupedMembers[role].map((member, index) => (
                   <div
                     key={index}
-                    className="relative p-6 rounded-lg shadow-lg w-52 text-center hover:bg-teal-100 transition-colors"
+                    className="relative p-6 rounded-lg w-52 text-center transition-colors"
                     style={{
-                      backgroundColor: '#57B8FF',
-                      color: '#F5F5F5' 
+                      backgroundColor: 'rgba(0, 115, 169, 0.3)',
+                      backdropFilter: 'blur(10px)', 
+                      boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)', 
+                      border: '1px solid rgba(255, 255, 255, 0.3)', 
+                      color: '#0B2545' 
                     }}
                   >
                    
                     <div
                       className="w-20 h-20 rounded-full bg-gray-300 mx-auto mb-4"
                       style={{
-                        border: '4px solid #A4F6D1', 
+                        border: '4px solid #007D7D', 
                       }}
                     ></div>
-                    <div className="text-xl font-semibold mb-2 text-white">{member.name}</div>
-                    <div className="text-white mb-4">{member.role}</div>
+                    <div className="text-xl font-semibold mb-2">{member.name}</div>
+                    <div className="mb-4">{member.role}</div>
 
                     
                     <div
                       className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 p-4 rounded-lg shadow-lg"
                       style={{
-                        backgroundColor: '#A4F6D1', 
+                        backgroundColor: 'rgba(164, 246, 209, 0.8)',
                       }}
                     >
                       <div className="flex justify-center gap-6">
