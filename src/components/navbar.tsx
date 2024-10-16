@@ -68,9 +68,13 @@ export default function Navbar() {
           <Link href="/faq" className="text-black hover:text-gray-600">
             FAQ
           </Link>
+          <Link href='/stats' className="text-black hover:text-gray-600">
+            Stats
+          </Link>
           <Link href="/contact" className="text-black hover:text-gray-600">
             Contact Us
           </Link>
+
         </div>
       </nav>
 
@@ -96,6 +100,9 @@ export default function Navbar() {
             <Link href="/faq" className="text-black hover:text-gray-600">
             FAQ
           </Link>
+          <Link href="/contact" className="text-black hover:text-gray-600">
+              Stats
+            </Link>
             <Link href="/contact" className="text-black hover:text-gray-600">
               Contact Us
             </Link>
