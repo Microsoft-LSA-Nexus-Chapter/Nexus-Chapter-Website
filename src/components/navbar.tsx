@@ -71,6 +71,7 @@ export default function Navbar() {
           <Link href="/contact" className="text-black hover:text-gray-600">
             Contact Us
           </Link>
+
         </div>
       </nav>
 

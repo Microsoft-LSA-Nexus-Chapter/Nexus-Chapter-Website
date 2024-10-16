@@ -56,7 +56,14 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		  minHeight: {
+			'screen': '100vh',  
+			'1/2': '50vh',      
+			'1/3': '33.33vh',   
+			'1/4': '25vh',      
+			'3/4': '75vh',      
+		}
   	}
   },
   plugins: [require("tailwindcss-animate")],
