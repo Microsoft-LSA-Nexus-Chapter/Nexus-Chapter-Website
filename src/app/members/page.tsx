@@ -3,30 +3,32 @@ import React from 'react';
 interface Member {
   name: string;
   role: string;
+  github?: string;
+  linkedin?: string;
 }
 
 const members: Member[] = [
-  { name: "Debaditya Som", role: "Core" },
-  { name: "Aditya Seth", role: "Cypher Prime" },
-  { name: "Shinjan Saha", role: "Cypher Associate" },
-  { name: "Sukrit Deb", role: "Illuminators Prime" },
-  { name: "Tanushree Das", role: "Illuminators Associate" },
-  { name: "Ankur Mukherjee", role: "Mandalorian" },
-  { name: "Diptanil Sen", role: "Mandalorian" },
-  { name: "Ishita Majumdar", role: "Mandalorian" },
-  { name: "Anik Mukherjee", role: "Sentinels Prime" },
-  { name: "Subhranil Shit", role: "Sentinels Associate" },
-  { name: "Sagnik Pramanik", role: "Cypher" },
-  { name: "Ashmit Ghosh", role: "Cypher" },
-  { name: "Reashav De", role: "Cypher" },
-  { name: "Anushka Bhowmick", role: "Cypher" },
-  { name: "Parna Roy Chowdhury", role: "Cypher" },
-  { name: "Srinjay Das Gupta", role: "Cypher" },
-  { name: "Komal Agarwal", role: "Cypher" },
-  { name: "Abhishikta Ray", role: "Cypher" },
-  { name: "Ankan Misra", role: "Cypher" },
-  { name: "Suman Jain", role: "Cypher" },
-  { name: "Rajdeep Saha", role: "Cypher" }
+  { name: "Debaditya Som", role: "Core", linkedin: "https://linkedin.com/in/debaditya-som", github: "https://github.com/Debaditya-som" },
+  { name: "Aditya Seth", role: "Cypher Prime", linkedin: "https://www.linkedin.com/in/aditya-seth-270833233/", github: "https://github.com/AdityaSeth777" },
+  { name: "Shinjan Saha", role: "Cypher Associate", linkedin: "https://www.linkedin.com/in/shinjan-saha-404064248/", github: "https://github.com/Shinjan-saha" },
+  { name: "Sukrit Deb", role: "Illuminators Prime", linkedin: "https://www.linkedin.com/in/sukritdeb/", github: "https://github.com/sukritdeb" },
+  { name: "Tanushree Das", role: "Illuminators Associate", linkedin: "https://www.linkedin.com/in/tanushreedas04/", github: "https://github.com" },
+  { name: "Ankur Mukherjee", role: "Mandalorian", linkedin: "https://www.linkedin.com/in/ankur-mukherjee01/", github: "https://github.com" },
+  { name: "Diptanil Sen", role: "Mandalorian", linkedin: "https://linkedin.com/in/diptanil-sen", github: "https://github.com" },
+  { name: "Ishita Majumdar", role: "Mandalorian", linkedin: "https://www.linkedin.com/in/ishita-majumdar-0059671b3/", github: "https://github.com" },
+  { name: "Anik Mukherjee", role: "Sentinels Prime", linkedin: "https://www.linkedin.com/in/anik-mukherjee-19a839285/", github: "https://github.com" },
+  { name: "Subhranil Moitra", role: "Sentinels Associate", linkedin: "https://www.linkedin.com/in/subhranil-moitra-9b285a1a6/", github: "https://github.com" },
+  { name: "Sagnik Pramanik", role: "Cypher", linkedin: "https://linkedin.com/in/sagnik-pramanik", github: "https://github.com" },
+  { name: "Ashmit Ghosh", role: "Cypher", linkedin: "https://linkedin.com/in/ashmit-ghosh", github: "https://github.com/ashmitghosh" },
+  { name: "Reashav De", role: "Cypher", linkedin: "https://www.linkedin.com/", github: "https://github.com" },
+  { name: "Anushka Bhowmick", role: "Cypher", linkedin: "https://www.linkedin.com/in/anushkabhowmick/", github: "https://github.com" },
+  { name: "Parna Roy Chowdhury", role: "Cypher", linkedin: "https://www.linkedin.com/in/parna-roy-chowdhury-756331256/", github: "https://github.com" },
+  { name: "Srinjay Das Gupta", role: "Cypher", linkedin: "https://www.linkedin.com/in/srinjay-das-gupta-441841214/", github: "https://github.com" },
+  { name: "Komal Agarwal", role: "Cypher", linkedin: "https://linkedin.com/in/", github: "https://github.com" },
+  { name: "Abhishikta Ray", role: "Cypher", linkedin: "https://www.linkedin.com/in/abhishikta-ray-321315258/", github: "https://github.com" },
+  { name: "Ankan Misra", role: "Cypher", linkedin: "https://www.linkedin.com/in/ankanmisra/", github: "https://github.com/ankanmisra" },
+  { name: "Suman Jain", role: "Cypher", linkedin:"https://www.linkedin.com" , github:"https://github.com" },
+  { name: "Rajdeep Saha", role: "Cypher", linkedin:"https://www.linkedin.com" , github:"https://github.com" }
 ];
 
 const groupedMembers = members.reduce<Record<string, Member[]>>((acc, member) => {
@@ -61,9 +63,9 @@ const Members: React.FC = () => {
                       border: '1px solid rgba(255, 255, 255, 0.3)',
                       color: '#0B2545',
                       transition: 'all 0.3s ease-in-out',
-                      minHeight: '240px', 
+                      minHeight: '240px',
                       overflow: 'visible',
-                      paddingBottom: '3rem' 
+                      paddingBottom: '3rem'
                     }}
                   >
                     <div
@@ -73,9 +75,8 @@ const Members: React.FC = () => {
                       }}
                     ></div>
                     <div className="text-xl font-semibold mb-2">{member.name}</div>
-                    <div className="mb-8">{member.role}</div> 
+                    <div className="mb-8">{member.role}</div>
 
-                   
                     <div
                       className="absolute top-0 left-0 w-full h-full rounded-lg pointer-events-none"
                       style={{
@@ -86,22 +87,25 @@ const Members: React.FC = () => {
                       }}
                     ></div>
 
-                   
-                    <div className="flex justify-center gap-6">
-                      <a href="#" className="flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full p-1 hover:bg-gray-300 transition">
-                        <img
-                          src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"
-                          alt="LinkedIn"
-                          className="w-6 h-6"
-                        />
-                      </a>
-                      <a href="#" className="flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full p-1 hover:bg-gray-300 transition">
-                        <img
-                          src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
-                          alt="GitHub"
-                          className="w-6 h-6"
-                        />
-                      </a>
+                    <div className="flex justify-center gap-6 mt-4">
+                      {member.linkedin && (
+                        <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full p-1 hover:bg-gray-300 transition">
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"
+                            alt="LinkedIn"
+                            className="w-6 h-6"
+                          />
+                        </a>
+                      )}
+                      {member.github && (
+                        <a href={member.github} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full p-1 hover:bg-gray-300 transition">
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                            alt="GitHub"
+                            className="w-6 h-6"
+                          />
+                        </a>
+                      )}
                     </div>
                   </div>
                 ))}
