@@ -3,10 +3,13 @@ import React from 'react';
 interface Member {
   name: string;
   role: string;
+  imageUrl?: string;
+  githubUrl?: string;
+  linkedinUrl?: string;
 }
 
 const members: Member[] = [
-  { name: "Debaditya Som", role: "Core" },
+  { name: "Debaditya Som", role: "Core", imageUrl: "" , githubUrl: "https://github.com/Debaditya-Som", linkedinUrl: "https://www.linkedin.com/in/debaditya-som-0b6b99215/"},
   { name: "Aditya Seth", role: "Cypher Prime" },
   { name: "Shinjan Saha", role: "Cypher Associate" },
   { name: "Sukrit Deb", role: "Illuminators Prime" },
@@ -26,7 +29,25 @@ const members: Member[] = [
   { name: "Abhishikta Ray", role: "Cypher" },
   { name: "Ankan Misra", role: "Cypher" },
   { name: "Suman Jain", role: "Cypher" },
-  { name: "Rajdeep Saha", role: "Cypher" }
+  { name: "Rajdeep Saha", role: "Cypher" },
+  { name: "Titli Dutta", role: "Illuminators" },
+  { name: "Prithwiraj Saha", role: "Illuminators" },
+  { name: "Rounak Banerjee", role: "Illuminators" },
+  { name: "Rick Mondal", role: "Illuminators" },
+  { name: "Aritra Acharya", role: "Illuminators" },
+  { name: "Debajyoti Mohanta", role: "Illuminators" },
+  { name: "Anubhab De", role: "Illuminators" },
+  { name: "Triparna Roy", role: "Mandalorian" },
+  { name: "Arkadip Ray", role: "Mandalorian" },
+  { name: "Samipan Pal", role: "Mandalorian" },    
+  { name: "Mahasweta Bhowmik", role: "Mandalorian" },
+  { name: "Swapit Biswas", role: "Mandalorian" },
+  { name: "Aditya Ghosh", role: "Mandalorian" },
+  { name: "Soumyadeep Kundu", role: "Mandalorian" },
+  { name: "Shayani Banerjee", role: "Mandalorian" },
+  { name: "Parthib Biswas", role: "Mandalorian" },
+  { name: "Rahul Khandait", role: "Mandalorian" },
+  { name: "Arita Hui", role: "Sentinals" },
 ];
 
 const groupedMembers = members.reduce<Record<string, Member[]>>((acc, member) => {
@@ -61,21 +82,26 @@ const Members: React.FC = () => {
                       border: '1px solid rgba(255, 255, 255, 0.3)',
                       color: '#0B2545',
                       transition: 'all 0.3s ease-in-out',
-                      minHeight: '240px', 
+                      minHeight: '240px',
                       overflow: 'visible',
-                      paddingBottom: '3rem' 
+                      paddingBottom: '3rem'
                     }}
                   >
                     <div
-                      className="w-20 h-20 rounded-full bg-gray-300 mx-auto mb-4"
+                      className="w-20 h-20 rounded-full bg-gray-300 mx-auto mb-4 overflow-hidden"
                       style={{
                         border: '4px solid #007D7D',
                       }}
-                    ></div>
+                    >
+                      <img
+                        src={member.imageUrl}
+                        alt={member.name}
+                        className="w-full h-full object-cover"  // Ensures the image fills the container
+                      />
+                    </div>
                     <div className="text-xl font-semibold mb-2">{member.name}</div>
-                    <div className="mb-8">{member.role}</div> 
+                    <div className="mb-8">{member.role}</div>
 
-                   
                     <div
                       className="absolute top-0 left-0 w-full h-full rounded-lg pointer-events-none"
                       style={{
@@ -86,7 +112,7 @@ const Members: React.FC = () => {
                       }}
                     ></div>
 
-                   
+
                     <div className="flex justify-center gap-6">
                       <a href="#" className="flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full p-1 hover:bg-gray-300 transition">
                         <img
