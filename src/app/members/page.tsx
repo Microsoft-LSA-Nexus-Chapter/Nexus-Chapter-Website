@@ -9,7 +9,7 @@ interface Member {
 }
 
 const members: Member[] = [
-  { name: "Debaditya Som", role: "Core", imageUrl: "/images/DebadityaSom.jpg" , githubUrl: "https://github.com/Debaditya-Som", linkedinUrl: "https://www.linkedin.com/in/debaditya-som-0b6b99215/"},
+  { name: "Debaditya Som", role: "Core", imageUrl: "" , githubUrl: "https://github.com/Debaditya-Som", linkedinUrl: "https://www.linkedin.com/in/debaditya-som-0b6b99215/"},
   { name: "Aditya Seth", role: "Cypher Prime" },
   { name: "Shinjan Saha", role: "Cypher Associate" },
   { name: "Sukrit Deb", role: "Illuminators Prime" },
