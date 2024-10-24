@@ -9,45 +9,45 @@ interface Member {
 }
 
 const members: Member[] = [
-  { name: "Debaditya Som", role: "Core", imageUrl: "" , githubUrl: "https://github.com/Debaditya-Som", linkedinUrl: "https://www.linkedin.com/in/debaditya-som-0b6b99215/"},
-  { name: "Aditya Seth", role: "Cypher Prime" },
-  { name: "Shinjan Saha", role: "Cypher Associate" },
-  { name: "Sukrit Deb", role: "Illuminators Prime" },
-  { name: "Tanushree Das", role: "Illuminators Associate" },
-  { name: "Ankur Mukherjee", role: "Mandalorian" },
-  { name: "Diptanil Sen", role: "Mandalorian" },
-  { name: "Ishita Majumdar", role: "Mandalorian" },
-  { name: "Anik Mukherjee", role: "Sentinels Prime" },
-  { name: "Subhranil Shit", role: "Sentinels Associate" },
-  { name: "Sagnik Pramanik", role: "Cypher" },
-  { name: "Ashmit Ghosh", role: "Cypher" },
-  { name: "Reashav De", role: "Cypher" },
-  { name: "Anushka Bhowmick", role: "Cypher" },
-  { name: "Parna Roy Chowdhury", role: "Cypher" },
-  { name: "Srinjay Das Gupta", role: "Cypher" },
-  { name: "Komal Agarwal", role: "Cypher" },
-  { name: "Abhishikta Ray", role: "Cypher" },
-  { name: "Ankan Misra", role: "Cypher" },
-  { name: "Suman Jain", role: "Cypher" },
-  { name: "Rajdeep Saha", role: "Cypher" },
-  { name: "Titli Dutta", role: "Illuminators" },
-  { name: "Prithwiraj Saha", role: "Illuminators" },
-  { name: "Rounak Banerjee", role: "Illuminators" },
-  { name: "Rick Mondal", role: "Illuminators" },
-  { name: "Aritra Acharya", role: "Illuminators" },
-  { name: "Debajyoti Mohanta", role: "Illuminators" },
-  { name: "Anubhab De", role: "Illuminators" },
-  { name: "Triparna Roy", role: "Mandalorian" },
-  { name: "Arkadip Ray", role: "Mandalorian" },
-  { name: "Samipan Pal", role: "Mandalorian" },    
-  { name: "Mahasweta Bhowmik", role: "Mandalorian" },
-  { name: "Swapit Biswas", role: "Mandalorian" },
-  { name: "Aditya Ghosh", role: "Mandalorian" },
-  { name: "Soumyadeep Kundu", role: "Mandalorian" },
-  { name: "Shayani Banerjee", role: "Mandalorian" },
-  { name: "Parthib Biswas", role: "Mandalorian" },
-  { name: "Rahul Khandait", role: "Mandalorian" },
-  { name: "Arita Hui", role: "Sentinals" },
+  { name: "Debaditya Som", role: "Core", imageUrl: "/images/DebadityaSom.jpg", githubUrl: "https://github.com/Debaditya-Som", linkedinUrl: "https://www.linkedin.com/in/debaditya-som-0b6b99215/" },
+  { name: "Aditya Seth", role: "Cypher Prime", imageUrl: "/images/aditya.jpeg" },
+  { name: "Shinjan Saha", role: "Cypher Associate", imageUrl: "/images/shinjan.jpg" },
+  { name: "Sukrit Deb", role: "Illuminators Prime" , imageUrl:"/images/sukrit.jpg"},
+  { name: "Tanushree Das", role: "Illuminators Associate", imageUrl: "/images/tanushree.jpg" },
+  { name: "Ankur Mukherjee", role: "Mandalorian" , imageUrl: "/images/ankur.jpg" },
+  { name: "Diptanil Sen", role: "Mandalorian", imageUrl: "/images/gaytonil.jpg" },
+  { name: "Ishita Majumdar", role: "Mandalorian" , imageUrl: "/images/ishita.jpg" },
+  { name: "Anik Mukherjee", role: "Sentinels Prime", imageUrl: "/images/anik.jpg" },
+  { name: "Subhranil Shit", role: "Sentinels Associate", imageUrl: "/images/subranil.jpg" },
+  { name: "Sagnik Pramanik", role: "Cypher", imageUrl: "/images/sagnik.jpeg" },
+  { name: "Ashmit Ghosh", role: "Cypher", imageUrl: "/images/Ashmit.jpg"},
+  { name: "Reashav De", role: "Cypher" , imageUrl: "/images/reashav.jpg"},
+  { name: "Anushka Bhowmick", role: "Cypher" , imageUrl: "/images/DSC_7147.jpg"},
+  { name: "Parna Roy Chowdhury", role: "Cypher" , imageUrl: "/images/parna.jpg"},
+  { name: "Srinjay Das Gupta", role: "Cypher", imageUrl:"/images/Srinjay.png" },
+  { name: "Komal Agarwal", role: "Cypher", imageUrl:"/images/Komal.jpg" },
+  { name: "Abhishikta Ray", role: "Cypher", imageUrl:"/images/abhishikta.jpg" },
+  { name: "Ankan Misra", role: "Cypher", imageUrl: "/images/ankan.jpeg" },
+  { name: "Suman Jain", role: "Cypher", imageUrl: "/images/suman.jpg", githubUrl: "https://github.com/SumanJain2005", linkedinUrl: "https://www.linkedin.com/in/suman-naresh-jain/" },
+  { name: "Rajdeep Saha", role: "Cypher", imageUrl: "/images/rajdeep.jpg" },
+  { name: "Titli Dutta", role: "Illuminators", imageUrl: "/images/titli.jpg" },
+  { name: "Prithwiraj Saha", role: "Illuminators", imageUrl: "/images/Prithiwiraj.jpg" },
+  { name: "Rounak Banerjee", role: "Illuminators" , imageUrl:"/images/Rounak.jpg" },
+  { name: "Rick Mondal", role: "Illuminators", imageUrl: "/images/Rick.jpg" },
+  { name: "Aritra Acharya", role: "Illuminators", imageUrl: "/images/aritra2.jpg" },
+  { name: "Debajyoti Mohanta", role: "Illuminators", imageUrl: "/images/Debjyoti.jpg" },
+  { name: "Anubhab De", role: "Illuminators", imageUrl: "/images/anubhab.jpg" },
+  { name: "Triparna Roy", role: "Mandalorian", imageUrl: "/images/Triparna.jpg" },
+  { name: "Arkadip Ray", role: "Mandalorian" , imageUrl:"/images/Arkadip.jpg" },
+  { name: "Samipan Pal", role: "Mandalorian", imageUrl: "/images/samipan.jpg" },
+  { name: "Mahasweta Bhowmik", role: "Mandalorian" , imageUrl:"/images/Mahasweta.jpg" },
+  { name: "Swapit Biswas", role: "Mandalorian", imageUrl: "/images/swapit.jpg" },
+  { name: "Aditya Ghosh", role: "Mandalorian" , imageUrl:"/images/aditya.jpg" },
+  { name: "Soumyadeep Kundu", role: "Mandalorian", imageUrl:"/images/soumyadeep.jpg" },
+  { name: "Shayani Banerjee", role: "Mandalorian", imageUrl: "/images/shayani.jpg" },
+  { name: "Parthib Biswas", role: "Mandalorian", imageUrl: "/images/parthib.jpg" },
+  { name: "Rahul Khandait", role: "Mandalorian", imageUrl: "/images/Rahul.jpg" },
+  { name: "Arita Hui", role: "Sentinals", imageUrl: "/images/Aritra.jpg" },
 ];
 
 const groupedMembers = members.reduce<Record<string, Member[]>>((acc, member) => {
@@ -121,7 +121,10 @@ const Members: React.FC = () => {
                           className="w-6 h-6"
                         />
                       </a>
-                      <a href="#" className="flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full p-1 hover:bg-gray-300 transition">
+                      <a
+                        href={member.githubUrl ? member.githubUrl : "#"}
+                        className="flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full p-1 hover:bg-gray-300 transition"
+                      >
                         <img
                           src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
                           alt="GitHub"
