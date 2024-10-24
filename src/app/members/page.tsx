@@ -22,7 +22,7 @@ const members: Member[] = [
   { name: "Sagnik Pramanik", role: "Cypher", imageUrl: "/images/sagnik.jpeg" },
   { name: "Ashmit Ghosh", role: "Cypher", imageUrl: "/images/Ashmit.jpg"},
   { name: "Reashav De", role: "Cypher" , imageUrl: "/images/reashav.jpg"},
-  { name: "Anushka Bhowmick", role: "Cypher" },
+  { name: "Anushka Bhowmick", role: "Cypher" , imageUrl: "/images/DSC_7147.jpg"},
   { name: "Parna Roy Chowdhury", role: "Cypher" , imageUrl: "/images/parna.jpg"},
   { name: "Srinjay Das Gupta", role: "Cypher", imageUrl:"/images/Srinjay.png" },
   { name: "Komal Agarwal", role: "Cypher", imageUrl:"/images/Komal.jpg" },
