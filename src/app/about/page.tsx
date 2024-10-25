@@ -19,8 +19,13 @@ const About = () => {
         <div className="flex justify-end mb-10 relative">
           <blockquote className="text-2xl md:text-[50px] leading-relaxed text-right text-gray-700 max-w-lg mb-10">
             <span className="font-bold">&ldquo;We&apos;re </span>
-            <span className="font-italiana">learners, enthusiasts, and freaks</span>
-            <span className="font-bold"> {" "}in this world of tech and knowledge..&rdquo;</span>
+            <span className="font-italiana">
+              learners, enthusiasts, and freaks
+            </span>
+            <span className="font-bold">
+              {" "}
+              in this world of tech and knowledge..&rdquo;
+            </span>
           </blockquote>
           <div className="absolute top-0 -right-4 w-1 h-full bg-black"></div>
         </div>
@@ -29,10 +34,17 @@ const About = () => {
           <div className="absolute top-0 left-0 w-1 h-full bg-black mt-6 lg:mt-0"></div>
           <div className="lg:w-3/4">
             <p className="text-gray-700 text-base leading-relaxed text-left lg:w-3/4">
-              Welcome to the Microsoft Learn Student Ambassadors (MLSA) Nexus Chapter, a vibrant community of passionate students dedicated to learning, growing, and empowering others through technology. As we strive to build a nexus of collaboration, innovation, and real-world problem-solving skills for students interested in Microsoft technologies and beyond.&nbsp;
+              Welcome to the Microsoft Learn Student Ambassadors (MLSA) Nexus
+              Chapter, a vibrant community of passionate students dedicated to
+              learning, growing, and empowering others through technology. As we
+              strive to build a nexus of collaboration, innovation, and
+              real-world problem-solving skills for students interested in
+              Microsoft technologies and beyond.&nbsp;
               <br />
               <br />
-              At the Nexus Chapter, we believe in fostering a supportive environment where students of all skill levels can come together to learn, teach, and inspire one another.
+              At the Nexus Chapter, we believe in fostering a supportive
+              environment where students of all skill levels can come together
+              to learn, teach, and inspire one another.
             </p>
           </div>
 
