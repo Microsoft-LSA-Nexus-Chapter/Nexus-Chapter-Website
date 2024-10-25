@@ -146,19 +146,19 @@ const Footer = () => {
                 icon={faXTwitter}
               />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/mlsa_nexus_chapter?igsh=MTR2ZHFhano5ZWUzbQ==">
               <FontAwesomeIcon
                 className="lg:w-8 lg:h-8 w-5 h-5 aspect-square cursor-pointer"
                 icon={faInstagram}
               />
             </a>
-            <a href="#">
+            <a href="https://www.youtube.com/@MLSA-Nexus">
               <FontAwesomeIcon
                 className="lg:w-8 lg:h-8 w-5 h-5 aspect-square cursor-pointer"
                 icon={faYoutube}
               />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/company/mlsa-nexus/">
               <FontAwesomeIcon
                 className="lg:w-8 lg:h-8 w-5 h-5 aspect-square cursor-pointer"
                 icon={faLinkedin}
@@ -171,7 +171,7 @@ const Footer = () => {
             use cases
           </p>
           {usecases.map((e) => (
-            <p className="use-cases-content lg:mb-4 mb-2">
+            <p key={e.link} className="use-cases-content lg:mb-4 mb-2">
               <a className="lg:text-sm text-xs" href={e.link}>
                 {e.content}
               </a>
@@ -183,7 +183,7 @@ const Footer = () => {
             explore
           </p>
           {explore.map((e) => (
-            <p className="explore-content lg:mb-4 mb-2">
+            <p key={e.id} className="explore-content lg:mb-4 mb-2">
               <a className="lg:text-sm text-xs" href={e.link}>
                 {e.content}
               </a>
@@ -195,7 +195,7 @@ const Footer = () => {
             resources
           </p>
           {resources.map((e) => (
-            <p className="resources-content lg:mb-4 mb-2">
+            <p key={e.id} className="resources-content lg:mb-4 mb-2">
               <a className="lg:text-sm text-xs" href={e.link}>
                 {e.content}
               </a>
@@ -214,7 +214,7 @@ const Footer = () => {
         <a href="#" className="hover:underline">
           Terms of Service
         </a>
-        <a href="#" className="hover:underline">
+        <a href="/contact" className="hover:underline">
           Contact Us
         </a>
       </div>

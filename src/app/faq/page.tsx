@@ -1,70 +1,118 @@
-import React from "react";
+"use client"
+import { useRef, useState } from "react";
+import Image from "next/image";
+import faqimg from "../../../public/images/faq.png"
 
-const FAQ = () => {
-  interface FaqContent {
-    id: number;
-    question: string;
-    answer: string;
-  }
+interface FaqsCardProps {
+  faqsList: { q: string; a: string };
+  idx: number;
+}
 
-  const data: FaqContent[] = [
-    {
-      id: 1,
-      question: "What is the MLSA Nexus Chapter?",
-      answer:
-        "The MLSA Nexus Chapter is a student-led tech community under the Microsoft Learn Student Ambassador program. We organize events and workshops focused on technology to help students grow their skills.",
-    },
-    {
-      id: 2,
-      question: "Who can join the MLSA Nexus Chapter?",
-      answer:
-        "Any student with a passion for technology and learning can join! We welcome all skill levels, from beginners to experienced coders.",
-    },
-    {
-      id: 3,
-      question: "How can I participate in your events?",
-      answer:
-        "Follow our social media or website for announcements on upcoming events and workshops. You can register for any event that interests you and be a part of the action!",
-    },
-  ];
+const FaqsCard = ({ faqsList, idx }: FaqsCardProps) => {
+  const answerElRef = useRef<HTMLDivElement>(null);
+  const [state, setState] = useState(false);
+  const [answerH, setAnswerH] = useState("0px");
+
+  const handleOpenAnswer = () => {
+    const answerElH = answerElRef.current ? (answerElRef.current.childNodes[0] as HTMLElement).offsetHeight : 0;
+    setState(!state);
+    setAnswerH(`${answerElH + 20}px`);
+  };
+
   return (
-    <div className="faq-container pb-10 min-h-screen   min-w-screen bg-white text-white font-sans">
-      <h1 className="md:text-5xl lg:pt-28 pt-32 px-6 text-2xl font-bold text-center  text-black">
-        Frequently Asked Questions (FAQs)
-      </h1>
-      {data.map((e) => (
-        <>
-          <div className="sub-container-question md:mt-20 mt-14 h-fit w-full bg-transparent md:text-lg ">
-            <div className="lg:pl-10 pl-5 lg:h-32 h-24 w-full flex ">
-              <div
-                className="lg:text-2xl question p-10 h-full lg:w-2/6 md:w-3/5 w-4/5 bg-[#42924A] flex items-center   justify-center rounded-t-lg rounded-br-[5rem] shadow-[5px_5px_20px_grey] font-thin"
-                // // to add spikes for the box // //
-                // style={{
-                //   clipPath:
-                //     "polygon(0% 0%,100% 0%,100% 80%,80% 80%,80% 80%,10% 80%,0% 100%)",
-                // }}
-              >
-                {e.question}
-              </div>
-            </div>
-          </div>
-          <div className="sub-container-answer md:mt-20 mt-14 h-fit w-full bg-transparent ">
-            <div className="pr-10 lg:h-40 md:h-36 h-fit w-full flex place-content-end text-center">
-              <div
-                className="answer lg:text-xl md:text-sm text-sm lg:p-10 p-6  h-full lg:w-3/6 md:w-3/5  w-4/5 bg-[#51ADCF] flex items-center  justify-center rounded-t-lg rounded-bl-[5rem] rounded-br-none shadow-[5px_5px_20px_grey] font-thin"
-                // // to add spikes for the box // //
-                // style={{
-                //   clipPath: "polygon(0% 0%,100% 0%,100% 100%,90% 90%,0% 90%)",
-                // }}
-              >
-                {e.answer}
-              </div>
-            </div>
-          </div>
-        </>
-      ))}
+    <div
+      className="space-y-3 mt-5 overflow-hidden border-b"
+      key={idx}
+      onClick={handleOpenAnswer}
+    >
+      <h4 className="cursor-pointer pb-5 flex items-center justify-between text-lg text-gray-700 font-medium">
+        {faqsList.q}
+        {state ? (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 text-gray-500 ml-2"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M20 12H4"
+            />
+          </svg>
+        ) : (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 text-gray-500 ml-2"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 4v16m8-8H4"
+            />
+          </svg>
+        )}
+      </h4>
+      <div
+        ref={answerElRef}
+        className="duration-300"
+        style={state ? { height: answerH } : { height: "0px" }}
+      >
+        <div>
+          <p className="text-gray-500">{faqsList.a}</p>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default FAQ;
+export default () => {
+  const faqsList = [
+    {
+      q: "What is the MLSA Nexus Chapter?",
+      a:
+        "The MLSA Nexus Chapter is a student-led tech community under the Microsoft Learn Student Ambassador program. We organize events and workshops focused on technology to help students grow their skills.",
+    },
+    {
+      q: "Who can join the MLSA Nexus Chapter?",
+      a:
+        "Any student with a passion for technology and learning can join! We welcome all skill levels, from beginners to experienced coders.",
+    },
+    {
+      q: "How can I participate in your events?",
+      a:
+        "Follow our social media or website for announcements on upcoming events and workshops. You can register for any event that interests you and be a part of the action!",
+    },
+  ];
+
+  return (
+    <section className="leading-relaxed py-20 mt-12 mx-auto px-4 md:px-8 bg-white">
+      <div className="space-y-3 text-center">
+        <h1 className="text-3xl font-semibold text-black">
+          <span className="text-blue-800">Frequently{" "}</span>
+          Asked Questions
+        </h1>
+        <p className="text-gray-600 max-w-lg mx-auto text-lg">
+          Answered all frequently asked questions, Still confused? feel free to
+          contact us.
+        </p>
+      </div>
+      <div className="flex justify-evenly lg:flex-row md:flex-row flex-col">
+        <div className="mt-14 max-w-2xl mx-auto">
+          {faqsList.map((item, idx) => (
+            <FaqsCard idx={idx} faqsList={item} />
+          ))}
+        </div>
+        <div className="mt-5">
+          <Image src={faqimg} alt="faq" width={400} height={420} />
+        </div>
+      </div>
+    </section>
+  );
+};
