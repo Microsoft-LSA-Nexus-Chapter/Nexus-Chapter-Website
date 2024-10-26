@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -63,6 +64,15 @@ const config: Config = {
 			'1/3': '33.33vh',   
 			'1/4': '25vh',      
 			'3/4': '75vh',      
+		},
+		animation:{
+			'glide': 'glide 2s ease-in-out infinite'
+		},
+		keyframes:{
+			glide: {
+				'0%,100%' : { transform: 'translateY(0px)'},
+				'50%' : { transform: 'translateY(-10px)'},
+			}
 		}
   	}
   },
