@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import ContactImg from "../../../public/images/contact2.jpg";
+import ContactImg from "../../../public/images/contact-removebg.png";
 
 const Contact = () => {
   return (
