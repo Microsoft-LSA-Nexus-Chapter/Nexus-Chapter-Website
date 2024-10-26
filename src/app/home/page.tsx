@@ -1,4 +1,7 @@
+"use client";
+
 import { useState } from 'react'
+
 import { ChevronLeft, ChevronRight, Facebook, Twitter, Linkedin } from 'lucide-react'
 
 export default function HomePage() {
