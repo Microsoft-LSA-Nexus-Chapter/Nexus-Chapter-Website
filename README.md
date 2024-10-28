@@ -18,6 +18,9 @@ https://www.figma.com/design/9EePKTLQQBEbIW1FtQKXJJ/Nexus-Website
 
 ---
 
+## MLSA Nexus Chapter Leaderboard:-
+https://mlsa-nexus-leaderboard.vercel.app/
+
 ## 🎃 Hacktoberfest 2024 Collaboration
 
 We are thrilled to announce that **MLSA Nexus Chapter Website** is part of **Hacktoberfest 2024**! Hacktoberfest is a month-long celebration of open-source software, and we welcome all contributors, from beginners to seasoned developers, to join us and help make this repository even better.
