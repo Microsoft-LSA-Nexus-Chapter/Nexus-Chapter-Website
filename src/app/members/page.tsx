@@ -45,7 +45,7 @@ const members: Member[] = [
   { name: "Aditya Ghosh", role: "Mandalorian" , imageUrl:"/images/aditya.jpg" },
   { name: "Soumyadeep Kundu", role: "Mandalorian", imageUrl:"/images/soumyadeep.jpg" },
   { name: "Shayani Banerjee", role: "Mandalorian", imageUrl: "/images/shayani.jpg" },
-  { name: "Parthib Biswas", role: "Mandalorian", imageUrl: "/images/parthib.jpg" },
+  { name: "Parthib Biswas", role: "Mandalorian", imageUrl: "/images/parthib.jpg",githubUrl: "https://github.com/ParthibBiswas10", linkedinUrl: "https://www.linkedin.com/in/parthib-biswas-79b06029b/" },
   { name: "Rahul Khandait", role: "Mandalorian", imageUrl: "/images/Rahul.jpg" },
   { name: "Arita Hui", role: "Sentinals", imageUrl: "/images/Aritra.jpg" },
 ];
