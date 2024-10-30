@@ -114,7 +114,7 @@ const Members: React.FC = () => {
 
 
                     <div className="flex justify-center gap-6">
-                      <a href="#" className="flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full p-1 hover:bg-gray-300 transition">
+                      <a href={member.linkedinUrl ? member.linkedinUrl : "#"} className="flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full p-1 hover:bg-gray-300 transition">
                         <img
                           src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"
                           alt="LinkedIn"
