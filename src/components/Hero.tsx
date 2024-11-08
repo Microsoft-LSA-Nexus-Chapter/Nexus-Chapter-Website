@@ -23,26 +23,26 @@ export default function Hero() {
     {/* First Stat */}
     <div className="text-center flex flex-col items-center justify-center">
       <h2 className="text-slate-800 text-6xl font-bold">
-      <CountUp end={1100} duration={3} suffix="+" />
+      <CountUp end={100} duration={5} suffix="+" />
         
       </h2>
-      <p className="text-xl text-blue-800">Members</p>
+      <p className="text-xl text-blue-800">Registrtation</p>
     </div>
     
     {/* Second Stat */}
     <div className="text-center flex flex-col items-center justify-center">
       <h2 className="text-slate-800 text-6xl font-bold">
-      <CountUp end={20} duration={3} suffix="+" />
+      <CountUp end={50} duration={5} suffix="+" />
       </h2>
-      <p className="text-xl text-blue-600">Events</p>
+      <p className="text-xl text-blue-600"> Merged PR</p>
     </div>
     
     {/* Third Stat */}
     <div className="text-center flex flex-col items-center justify-center">
       <h2 className="text-slate-800 text-6xl font-bold">
-      <CountUp end={10} duration={3} suffix="+" />
+      <CountUp end={20} duration={5} suffix="+" />
       </h2>
-      <p className="text-xl text-blue-600">Projects</p>
+      <p className="text-xl text-blue-600">Active Contributors</p>
     </div>
   </div>
 </div>
