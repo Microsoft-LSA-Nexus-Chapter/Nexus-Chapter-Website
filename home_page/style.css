@@ -1,0 +1,155 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+.navigation {
+    height: 5vh;
+    
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #666666;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 4vh 11vw;
+}
+
+.hero-image {
+    background-color: #bdbdbd;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Section Headings */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+/* Events Section */
+.events-section,
+.team-section {
+    padding: 40px 20px;
+}
+
+.events-container {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.event-card {
+    display: flex;
+    align-items: center;
+
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    width: 72vh;
+    height: 15vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-card .event-image {
+    background-color: #e0e0e0;
+    width: 12vh;
+    height:12vh;
+    border-radius: 4px;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.event-card .event-content {
+    text-align: left;
+}
+
+.event-card h3 {
+    font-size: 18px;
+    margin: 0 0 8px 0;
+    color: #333;
+}
+
+.event-card p {
+    margin: 0 0 8px 0;
+    padding-bottom: 5px;
+    color: #757575;
+    /* padding: 10px; */
+}
+
+.event-card .event-organizer {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-weight: bold;
+}
+
+.event-card .organizer-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/* Team Section */
+/* .team-section {
+    background-color: #f9f9f9;
+} */
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+}
+
+.team-card {
+    text-align: center;
+    padding: 20px;
+    width: 150px;
+    background-color: white;
+    border-radius: 8px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.team-avatar {
+    background-color: #cfcfcf;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.team-role {
+    color: #757575;
+}
+
+/* Footer */
+footer{
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+footer p{
+    
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+        
+}
+footer p a{
+    color: black;
+    text-decoration: none;
+}
