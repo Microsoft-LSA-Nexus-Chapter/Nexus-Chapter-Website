@@ -7,6 +7,7 @@ interface EventCardProps {
   description: string;
   badges: string[];
   timeAgo: string;
+  registerLink: string; 
 }
 
 export default function EventCard({
@@ -14,9 +15,10 @@ export default function EventCard({
   description,
   badges,
   timeAgo,
+  registerLink,
 }: EventCardProps) {
   return (
-    <div className="w-full space-y-3 max-w-screen-lg mx-auto rounded-xl p-6 shadow-md ">
+    <div className="w-full space-y-3 max-w-screen-lg mx-auto rounded-xl p-6 shadow-md">
       <section className="flex justify-between">
         <section>
           <p className="text-2xl font-semibold text-[#284067]">{title}</p>
@@ -37,9 +39,15 @@ export default function EventCard({
         ))}
       </section>
       <section className="flex justify-between pt-5">
-        <Button className="bg-[#284067] rounded-md text-white hover:scale-105 duration-200">
+        {/* Register button with link */}
+        <a
+          href={registerLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#284067] rounded-md text-white hover:scale-105 duration-200 px-4 py-2 flex items-center justify-center"
+        >
           Register
-        </Button>
+        </a>
         <Button className="flex border-border border group">
           See More
           <ChevronRight
