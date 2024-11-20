@@ -8,7 +8,7 @@ const fakeEvents = [
     badges:[".NET", "API", "Objective C"],
     timeAgo: "20/10/2024",
     status: "past",
-    registerLink: "https://stdntpartners-my.sharepoint.com/personal/aditya_seth_studentambassadors_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Faditya%5Fseth%5Fstudentambassadors%5Fcom%2FDocuments%2FHackNexus%2FBuilding%20Minimal%20API%20with%20%2ENET",
+    seeMoreLink: "https://stdntpartners-my.sharepoint.com/personal/aditya_seth_studentambassadors_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Faditya%5Fseth%5Fstudentambassadors%5Fcom%2FDocuments%2FHackNexus%2FBuilding%20Minimal%20API%20with%20%2ENET",
   },
   {
     title: " Level up with Data! Don’t Miss the HackNexus Data Science Webinar",
@@ -16,7 +16,7 @@ const fakeEvents = [
     badges: ["Python", "Numpy", "Data-Science"],
     timeAgo: "19/10/2024",
     status: "past",
-    registerLink: "https://stdntpartners-my.sharepoint.com/personal/aditya_seth_studentambassadors_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Faditya%5Fseth%5Fstudentambassadors%5Fcom%2FDocuments%2FHackNexus%2FData%20Science%20Demystified",
+    seeMoreLink: "https://stdntpartners-my.sharepoint.com/personal/aditya_seth_studentambassadors_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Faditya%5Fseth%5Fstudentambassadors%5Fcom%2FDocuments%2FHackNexus%2FData%20Science%20Demystified",
   },
   {
     title: "Dive into PHP & MySQL Essentials!",
@@ -24,7 +24,7 @@ const fakeEvents = [
     badges: ["PHP", "MYSQL"],
     timeAgo: "25/10/2024",
     status: "past",
-    registerLink: "https://stdntpartners-my.sharepoint.com/personal/aditya_seth_studentambassadors_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Faditya%5Fseth%5Fstudentambassadors%5Fcom%2FDocuments%2FHackNexus%2FWeb%20Dev%20101%20%2D%20Introduction%20to%20PHP%20%26%20MySQL",
+    seeMoreLink: "https://stdntpartners-my.sharepoint.com/personal/aditya_seth_studentambassadors_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Faditya%5Fseth%5Fstudentambassadors%5Fcom%2FDocuments%2FHackNexus%2FWeb%20Dev%20101%20%2D%20Introduction%20to%20PHP%20%26%20MySQL",
   },
   {
     title: "React Revolution is ON! ",
@@ -32,7 +32,7 @@ const fakeEvents = [
     badges: ["ReactJS", "TailwindCSS"],
     timeAgo: "26/10/2024",
     status: "past",
-    registerLink: "https://stdntpartners-my.sharepoint.com/personal/aditya_seth_studentambassadors_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Faditya%5Fseth%5Fstudentambassadors%5Fcom%2FDocuments%2FHackNexus%2FReact%20Revolution%20%2D%20Building%20React%20Js%20and%20Tailwind%20CSS%20Applications", 
+    seeMoreLink: "https://stdntpartners-my.sharepoint.com/personal/aditya_seth_studentambassadors_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Faditya%5Fseth%5Fstudentambassadors%5Fcom%2FDocuments%2FHackNexus%2FReact%20Revolution%20%2D%20Building%20React%20Js%20and%20Tailwind%20CSS%20Applications", 
   },
   {
     title: "Next Level Web Dev—Mastering Next.js!",
@@ -40,7 +40,7 @@ const fakeEvents = [
     badges: ["ReactJS", "TailwindCSS"],
     timeAgo: "27/10/2024",
     status: "past",
-    registerLink: "https://stdntpartners-my.sharepoint.com/personal/aditya_seth_studentambassadors_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Faditya%5Fseth%5Fstudentambassadors%5Fcom%2FDocuments%2FHackNexus%2FNext%20Level%20Web%20Dev%2D%20Mastering%20Next%2EJs",
+    seeMoreLink: "https://stdntpartners-my.sharepoint.com/personal/aditya_seth_studentambassadors_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Faditya%5Fseth%5Fstudentambassadors%5Fcom%2FDocuments%2FHackNexus%2FNext%20Level%20Web%20Dev%2D%20Mastering%20Next%2EJs",
   },
   {
     title: "Mastering Linux & Bash—Explore, Automate, Secure!",
@@ -48,12 +48,13 @@ const fakeEvents = [
     badges: ["Linux", "Bash", "Automatation", "Security"],
     timeAgo: "28/10/2024",
     status: "past",
-    registerLink: "https://stdntpartners-my.sharepoint.com/personal/aditya_seth_studentambassadors_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Faditya%5Fseth%5Fstudentambassadors%5Fcom%2FDocuments%2FHackNexus%2FMastering%20Linux%20and%20Bash%20Scripting",
+    seeMoreLink: "https://stdntpartners-my.sharepoint.com/personal/aditya_seth_studentambassadors_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Faditya%5Fseth%5Fstudentambassadors%5Fcom%2FDocuments%2FHackNexus%2FMastering%20Linux%20and%20Bash%20Scripting",
   },
+  // Upcoming Events Data
   {
     title: ".NET Conf 2024 Nexus",
     description: "A conference for .NET developers",
-    badges: [".NET", "RxJS", ".NET 9"],
+    badges: [".NET", ".NET 9"],
     timeAgo: "24/11/2024",
     status: "upcoming",
     registerLink: "https://teams.microsoft.com/l/meetup-join/19%3ameeting_YmI2NDBjZjktMGZlOC00MjJkLTkzYmYtMmNhZmE4MzFiN2Rh%40thread.v2/0?context=%7b%22Tid%22%3a%2284c31ca0-ac3b-4eae-ad11-519d80233e6f%22%2c%22Oid%22%3a%22429980c3-3787-4fc8-8362-a810330033ba%22%7d",
@@ -89,7 +90,9 @@ const Events = () => {
                 description={event.description}
                 badges={event.badges}
                 timeAgo={event.timeAgo}
-                registerLink={event.registerLink} // Pass register link
+                registerLink={event.registerLink}
+                seeMoreLink={event.seeMoreLink}
+                isUpcoming={true}
               />
             ))}
           </div>
@@ -110,7 +113,8 @@ const Events = () => {
                 description={event.description}
                 badges={event.badges}
                 timeAgo={event.timeAgo}
-                registerLink={event.registerLink} // Pass register link
+                seeMoreLink={event.seeMoreLink}
+                isUpcoming={false}
               />
             ))}
           </div>

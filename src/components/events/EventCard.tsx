@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Clock, ChevronRight } from "lucide-react";
 
@@ -7,7 +6,9 @@ interface EventCardProps {
   description: string;
   badges: string[];
   timeAgo: string;
-  registerLink: string; 
+  registerLink?: string; 
+  seeMoreLink?: string; 
+  isUpcoming: boolean; 
 }
 
 export default function EventCard({
@@ -16,6 +17,8 @@ export default function EventCard({
   badges,
   timeAgo,
   registerLink,
+  seeMoreLink,
+  isUpcoming,
 }: EventCardProps) {
   return (
     <div className="w-full space-y-3 max-w-screen-lg mx-auto rounded-xl p-6 shadow-md">
@@ -39,22 +42,35 @@ export default function EventCard({
         ))}
       </section>
       <section className="flex justify-between pt-5">
-        {/* Register button with link */}
-        <a
-          href={registerLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-[#284067] rounded-md text-white hover:scale-105 duration-200 px-4 py-2 flex items-center justify-center"
-        >
-          Register
-        </a>
-        <Button className="flex border-border border group">
-          See More
-          <ChevronRight
-            size={20}
-            className="ml-1 transition-transform duration-300 group-hover:translate-x-1"
-          />
-        </Button>
+        {/* Register Button for Upcoming Events */}
+        {isUpcoming ? (
+          <a
+            href={registerLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#284067] rounded-md text-white hover:scale-105 duration-200 px-4 py-2 flex items-center justify-center"
+          >
+            Register
+          </a>
+        ) : (
+          <div /> 
+        )}
+
+        {/* See Recordings Button for Past Events */}
+        {!isUpcoming && seeMoreLink && (
+          <a
+            href={seeMoreLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex border border-border group px-4 py-2 rounded-md items-center text-sm text-[#284067] hover:bg-gray-100"
+          >
+            See Recordings
+            <ChevronRight
+              size={20}
+              className="ml-1 transition-transform duration-300 group-hover:translate-x-1"
+            />
+          </a>
+        )}
       </section>
     </div>
   );
