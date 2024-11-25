@@ -26,7 +26,7 @@ export default function Hero() {
       <CountUp end={100} duration={5} suffix="+" />
         
       </h2>
-      <p className="text-xl text-blue-800">Registrtation</p>
+      <p className="text-xl text-blue-800">Registration</p>
     </div>
     
     {/* Second Stat */}
