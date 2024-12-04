@@ -8,34 +8,42 @@ const Contact = () => {
     name: "",
     email: "",
     message: "",
+    _gotcha: ""
   });
   const [status, setStatus] = useState("");
 
-  const handleChange = (e: { target: { id: any; value: any; }; }) => {
-    setFormData({
-      ...formData,
-      [e.target.id]: e.target.value,
-    });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
   };
 
-  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("Sending...");
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://getform.io/f/ayvvwjzb", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "Accept": "application/json"
         },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        setStatus("Email sent successfully!");
-        setFormData({ name: "", email: "", message: "" }); 
+        setStatus("Message sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+          _gotcha: ""
+        });
       } else {
-        setStatus("Failed to send email.");
+        setStatus("Failed to send message.");
       }
     } catch (error) {
       console.error(error);
@@ -58,36 +66,36 @@ const Contact = () => {
       </div>
       <div className="bg-[#0278AE] h-fit w-full md:w-[70%] lg:w-1/3 flex items-center justify-center rounded-2xl shadow-[20px_10px_40px_gray]">
         <div className="w-[70%] lg:w-[80%] mx-auto my-10 mb-20 py-2 lg:p-10">
-          <h1 className="text-3xl lg:text-[2.5rem] font-italiana font-bold text-center mb-5">
+          <h1 className="text-3xl lg:text-[2.5rem] font-italiana font-bold text-center mb-5 text-white">
             Get in Touch
           </h1>
           <form onSubmit={handleSubmit} className="mt-5 max-w-md mx-auto text-gray-800">
-            <div className="mb-10">
+            <div className="mb-6">
               <input
                 className="border rounded-2xl w-full py-2 px-3"
                 type="text"
-                id="name"
+                name="name"
                 placeholder="Name"
                 value={formData.name}
                 onChange={handleChange}
                 required
               />
             </div>
-            <div className="mb-10">
+            <div className="mb-6">
               <input
                 className="border rounded-2xl w-full py-2 px-3"
                 type="email"
-                id="email"
+                name="email"
                 placeholder="Email"
                 value={formData.email}
                 onChange={handleChange}
                 required
               />
             </div>
-            <div className="mb-5">
+            <div className="mb-6">
               <textarea
                 className="border rounded-2xl w-full py-2 px-3 resize-none"
-                id="message"
+                name="message"
                 rows={3}
                 placeholder="Message"
                 value={formData.message}
@@ -95,6 +103,9 @@ const Contact = () => {
                 required
               />
             </div>
+
+            <input type="hidden" name="_gotcha" style={{ display: 'none' }} />
+
             <button
               type="submit"
               className="bg-slate-300 w-[70%] lg:w-2/4 lg:hover:w-3/4 transition-all mx-[50%] -translate-x-[50%] text-black hover:text-white py-2 px-4 hover:bg-slate-700 rounded-xl font-semibold"
@@ -102,7 +113,9 @@ const Contact = () => {
               Send Message
             </button>
           </form>
-          <p className="text-center mt-5">{status}</p>
+          {status && (
+            <p className="text-center mt-5 text-white font-semibold">{status}</p>
+          )}
         </div>
       </div>
     </div>
