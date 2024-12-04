@@ -7,16 +7,28 @@ const fakeEvents = [
 
 // Upcoming Events Data
 {
+  title: "Deploy your First Static App in Cloud within Minutes",
+  description: "Ready to take your first step into the cloud? In this session, we'll show you how to deploy your first static web application on Microsoft Azure. Learn the basics of Azure App Services, set up your app, and make it live in just a few simple steps. Perfect for beginners looking to dive into cloud deployment!",
+  badges: ["Azure", "Web","Deployment"],
+  timeAgo: "08/12/2024",
+  status: "upcoming",
+  registerLink: "https://events.teams.microsoft.com/event/774ea821-7173-44a8-a851-f43798878802@84c31ca0-ac3b-4eae-ad11-519d80233e6f",
+  image: "https://i.postimg.cc/MHKXnGnZ/Whats-App-Image-2024-12-04-at-11-58-10-AM.jpg",
+},
+
+// Past Events
+
+{
   title: ".NET Conf 2024 Nexus",
   description: "Explore the latest in .NET technologies with live streams, interactive discussions, hands-on demos, and fun activities. Don’t miss the chance to connect with tech enthusiasts, win exciting prizes, and dive into the future of .NET!",
   badges: [".NET", ".NET 9"],
   timeAgo: "24/11/2024",
-  status: "upcoming",
-  registerLink: "https://teams.microsoft.com/l/meetup-join/19%3ameeting_YmI2NDBjZjktMGZlOC00MjJkLTkzYmYtMmNhZmE4MzFiN2Rh%40thread.v2/0?context=%7b%22Tid%22%3a%2284c31ca0-ac3b-4eae-ad11-519d80233e6f%22%2c%22Oid%22%3a%22429980c3-3787-4fc8-8362-a810330033ba%22%7d",
+  status: "past",
+  seeMoreLink: "https://teams.microsoft.com/l/meetup-join/19%3ameeting_YmI2NDBjZjktMGZlOC00MjJkLTkzYmYtMmNhZmE4MzFiN2Rh%40thread.v2/0?context=%7b%22Tid%22%3a%2284c31ca0-ac3b-4eae-ad11-519d80233e6f%22%2c%22Oid%22%3a%22429980c3-3787-4fc8-8362-a810330033ba%22%7d",
   image: "https://i.postimg.cc/BQmJL4fj/Whats-App-Image-2024-11-21-at-6-39-05-PM.jpg",
 },
 
-// Past Events
+
 
 {
   title: "Mastering Linux & Bash—Explore, Automate, Secure!",
